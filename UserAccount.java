@@ -12,7 +12,6 @@ name=sc.next();
 }
 public void display()
 {
-System.out.println("***********************************");
 System.out.println("----------------------------------------------");
 System.out.println("Account no:"+acc_no+"\n"+"Name:"+name+"\n");
 System.out.println("----------------------------------------------");
