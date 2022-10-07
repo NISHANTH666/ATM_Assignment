@@ -8,31 +8,31 @@ public void deposit()
 {
 
 balance=balance+amount;
-System.out.println("----------------------------------------------");
+System.out.println("_____________________");
 System.out.println("Deposited :"+amount);
-System.out.println("----------------------------------------------"); 
+System.out.println("_____________________"); 
 }
 public void withdrawl()
 {
 if(balance>=amt&&amt>0)
 {
 balance=balance-amt;
-System.out.println("-------------------------------------");
+System.out.println("_____________________");
 System.out.println("Withdrawn :"+amt);
-System.out.println("-----------------------------------------------------");
+System.out.println("_____________________");
 } 
 else
 { 
-System.out.println("---------------------------");
-System.out.println("Can't do Withdrawl Process OR INSUFFICIENT BALANCE");
-System.out.println("--------------------------------------");
+System.out.println("_____________________");
+System.out.println("INSUFFICIENT BALANCE");
+System.out.println("______________________");
 } 
 }
 public void CheckBalance()
 {
-System.out.println("----------------------------------------------");
+System.out.println("_____________________");
 System.out.println("Balance :"+balance);
-System.out.println("----------------------------------------------");
+System.out.println("_____________________");
 }
 public static void main(String[] args)
 {
@@ -42,7 +42,7 @@ b.details();
 char ch;
 do
 {
-System.out.println("**********WELCOME**********");
+System.out.println("WElOME TO OUR SERVICES");
 System.out.println("A. Display Account Details");
 System.out.println("B. Deposit");
 System.out.println("C. Withdrawl");
@@ -62,7 +62,7 @@ case 'B':
 System.out.println("Enter the Amount to Deposit :");
 amount=sc.nextLong();
 b.deposit();
-System.out.println("***********************************");
+System.out.println("______________________");
 break;
 }
 case 'C':
@@ -70,20 +70,20 @@ case 'C':
 System.out.println("Enter the Amount to Withdraw :");
 amt=sc.nextLong();
 b.withdrawl();
-System.out.println("***********************************");
+System.out.println("______________________");
 break;
 }
 case 'D':
 {
 b.CheckBalance();
-System.out.println("***********************************");
+System.out.println("______________________");
 break;
 }
 case 'E':
 {
-System.out.println("---------------------------------");
-System.out.println("******THANK YOU FOR USING OUR SERVICES******");
-System.out.println("---------------------------------");
+System.out.println("______________________");
+System.out.println("THANK YOU");
+System.out.println("______________________");
 break;
 }
 }
